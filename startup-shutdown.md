@@ -111,7 +111,7 @@
         ipmitool -H fs02.irmc -U admin -P admin chassis power soft
         ipmitool -H da02.irmc -U admin -P admin chassis power soft
     ```
-    2. FS02(Fujitsu)
+    2. FS01(Fujitsu)
     ```bash
         ssh sn01 -p 666
         ipmitool -H fs01.irmc -U admin -P admin chassis power soft
