@@ -92,13 +92,22 @@
         sudo systemctl restart autofs.service
         ```
         ```bash
-        ssh sn01
+        ssh sn01 -p 666
         ansible -m shell -a 'systemctl restart autofs.service' cn0*
         ```
     
         Горните две би следвало да решат проблема.
 
         Възможно е да се наложи рестартиране и на други конкретни сървиси! Горното е ориентировъчно за най-основните проблеми.
+
+
+6. Мониторингови сървиси (prometheus, grafana, etc)
+
+    ```bash
+    ssh sn02
+    cd /home/sysadm/git/nestum/docker-apps/monitoring
+    sudo docker-compose up -d
+    ```
 
 ---
 
