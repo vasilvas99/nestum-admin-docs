@@ -109,6 +109,14 @@
     sudo docker-compose up -d
     ```
 
+
+7. Mailman
+
+    ```bash
+    ssh sn02
+    cd /home/sysadm/git/nestum/docker-apps/mailman
+    sudo docker-compose up -d
+    ```
 ---
 
 # Тотален/Частичен Shutdown:
